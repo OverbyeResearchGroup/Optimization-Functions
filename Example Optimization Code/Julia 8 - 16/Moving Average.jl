@@ -1,6 +1,3 @@
-import Pkg; Pkg.add("CSV")
-import Pkg; Pkg.add("DataFrames")
-import Pkg; Pkg.add("PyPlot")
 using CSV, DataFrames, LinearAlgebra
 # Load the data file (ref: Boyd/263)
 raw = DataFrame(CSV.File("./uy_data.csv"))
