@@ -1,3 +1,4 @@
+using JuMP, Cbc
 m = Model(Cbc.Optimizer)
 @variable(m, z[1:5], Bin )
 @constraint(m, 12z[1] + 2z[2] + 4z[3] + z[4] + z[5] <= 15)
